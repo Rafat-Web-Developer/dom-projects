@@ -18,31 +18,33 @@
             <div class="d-flex justify-content-center">
                 <button type="button" class="shadow-lg btn btn-success position-relative m-3">
                     Number of Task
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark p-2">
+                    <span id="totalTask" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark p-2">
                       0
                 </button>
                 <button type="button" class="shadow-lg m-3 btn btn-primary position-relative">
                     Total Completed
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark p-2">
+                    <span id="totalCompletedTask" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark p-2">
                       0
                 </button>
                 <button type="button" class="m-3 shadow-lg btn btn-danger position-relative">
                     Total Deleted
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark p-2">
+                    <span id="totalDeletedTask" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark p-2">
                       0
                 </button>
             </div>
         </section>
+        
         <section class=" my-3 py-3 border-bottom border-3 border-success ">
             <div class="row">
                 <div class="col-9">
                     <input type="text" id="inputText" class="form-control p-2" placeholder="Write your task here...">
                 </div>
                 <div class="col-3 mx-auto d-grid gap-2">
-                    <button class="btn btn-danger p-2 shadow-lg">ADD</button>
+                    <button id="inputBtn" class="btn btn-danger p-2 shadow-lg">ADD</button>
                 </div>
             </div>
         </section>
+
         <section class=" my-5">
             <table class="text-center table table-dark table-striped">
                 <thead>
@@ -53,16 +55,8 @@
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Pending</td>
-                    <td>
-                        <button class="btn btn-success btn-sm">Complete</button>
-                        <button class="btn btn-danger btn-sm">Delete</button>
-                    </td>
-                  </tr>
+                <tbody id="items-container">
+                  
                 </tbody>
               </table>
         </section>
@@ -71,5 +65,8 @@
 
     <!-- Bootstrap JS Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- My Custom Js -->
+    <script src="./js/anotherAwesome.js"></script>
 </body>
 </html>
