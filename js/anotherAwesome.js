@@ -15,11 +15,19 @@ inputBtn.addEventListener('click', function () {
     <td>Pending</td>
     <td>
         <button class="btn btn-success btn-sm">Complete</button>
-        <button class="btn btn-danger btn-sm">Delete</button>
+        <button class="btn btn-danger btn-sm" id="deleteBtn">Delete</button>
     </td>`;
-    console.log(tr);
     itemsContainer.appendChild(tr);
 
     inputTextField.value = '';
 
+});
+const deleteBtn = document.getElementById('deleteBtn');
+console.log(deleteBtn);
+deleteBtn.addEventListener('click', function () {
+    const totalDeletedTaskField = document.getElementById('totalDeletedTask');
+    const totalDeletedTask = parseInt(totalDeletedTaskField.innerText);
+    const newTotalTask = totalDeletedTask + 1;
+    totalDeletedTaskField.innerText = newTotalTask;
+    console.log('done');
 });
