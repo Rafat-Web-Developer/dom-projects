@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Generate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="root" id="main">
+        <div class="alert" id="alert">
+            <p>RGB Color Code copy successfully</p>
+        </div>
+        <div class="main-content">
+            <input id="showRGB" type="text" value="#RGBCode" disabled>
+            <button type="button" class="btn-copy" onclick="copyColorCode()">Copy</button>
+            <br>
+            <button type="button" class="btn" id="generateBtn">Generate Color</button>
+        </div>
+    </section>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
