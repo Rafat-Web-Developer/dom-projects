@@ -10,12 +10,17 @@
 <body>
     <section class="root" id="main">
         <div class="alert" id="alert">
-            <p>RGB Color Code copy successfully</p>
+            
         </div>
         <div class="main-content">
-            <input id="showRGB" type="text" value="#RGBCode" disabled>
-            <button type="button" class="btn-copy" onclick="copyColorCode()">Copy</button>
-            <br>
+            <div>
+                <input id="showHaxCode" type="text" value="#000000" disabled>
+                <button type="button" class="btn-copy" onclick="copyHaxColorCode()">Copy</button>
+            </div>
+            <div>
+                <input id="showRGB" type="text" value="#RGBCode" disabled>
+                <button type="button" class="btn-copy" onclick="copyRGBColorCode()">Copy</button>
+            </div>
             <button type="button" class="btn" id="generateBtn">Generate Color</button>
         </div>
     </section>
